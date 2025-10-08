@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: #ffffff;
@@ -96,8 +99,7 @@ header nav ul li{
 /* MAIN */
 /* TOP */
 section.topo-do-site{
-    padding: 40px 4%;
-    padding-top: 140px; /*To avoid the header*/
+    padding: 140px 4%;
 }
 
 section.topo-do-site .flex{
@@ -116,6 +118,7 @@ section.topo-do-site .flex{
 .topo-do-site .txt-topo-site p{
     color: black;
     margin: 30px 0;
+    text-align: justify;
 }
 
 .info-topo-site ul{
@@ -152,8 +155,7 @@ section.topo-do-site .flex{
 
 /* Skills */
 section.tools{
-    padding: 40px 4%;
-    padding-top: 140px;
+    padding: 140px 4%;
 }
 
 section.tools .interface .flex{
@@ -166,6 +168,12 @@ section.tools .interface .flex .card-tool{
     padding: 20px;
     text-align: center;
     font-size: 16px;
+    border-radius: 15%;
+}
+
+section.tools .interface .flex .card-tool:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.486);
+    transform: scale(1.08); 
 }
 
 section.tools .interface .flex .card-tool img{
@@ -177,8 +185,10 @@ section.tools .interface .flex .card-tool img{
 
 /* About */
 section.about{
-    padding: 40px 4%;
-    padding-top: 140px;
+    padding: 140px 4%;
+}
+.txt-about p{
+    text-align: justify;
 }
 
 section.about .flex{
@@ -191,8 +201,7 @@ section.about .flex{
 
 /* Studies */
 section.studies{
-    padding: 40px 4%;
-    padding-top: 140px;
+    padding: 140px 4%;
 }
 
 .card-study p{
@@ -201,11 +210,16 @@ section.studies{
 
 /* !Studies */
 
+/* Expirience */
+section.experiences{
+    padding: 140px 4%;
+}
+/* !Expirience */
+
 
 /* Projects */
 section.projects{
-    padding: 40px 4%;
-    padding-top: 140px;
+    padding: 140px 4%;
 }
 
 /* !Projects */
