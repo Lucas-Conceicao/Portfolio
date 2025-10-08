@@ -12,7 +12,7 @@ body{
 }
 
 .interface{
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -39,8 +39,8 @@ body{
 h2.titulo{
     text-align: center;
     font-size: 25px;
-    margin-bottom: 40px;
     color: black;
+    margin-bottom: 70px;
 }
 
 span{
@@ -92,6 +92,8 @@ header nav ul li{
 }
 
 /* !Header */
+
+/* MAIN */
 /* TOP */
 section.topo-do-site{
     padding: 40px 4%;
@@ -138,12 +140,8 @@ section.topo-do-site .flex{
 }
 
 @keyframes float{ /*Animation*/
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
+    0%{top: 0;}
+    100%{top: 30px;}
 }
 .topo-do-site .img-topo-site img{
     position: relative; /*'cause it's moving*/
@@ -151,18 +149,45 @@ section.topo-do-site .flex{
 }
 
 /* !TOP */
+
 /* Skills */
 section.tools{
     padding: 40px 4%;
     padding-top: 140px;
 }
 
-section.tools .interface{
-    flex-direction: column;
+section.tools .interface .flex{
     align-items: center;
-    gap: 50px;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap; /*Allows the cards to go to the next line if the screen is too small*/
 }
+section.tools .interface .flex .card-tool{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+section.tools .interface .flex .card-tool img{
+    height: 60px;
+    width: 60px;
+}
+
 /* !Skills */
+
+/* About */
+section.about{
+    padding: 40px 4%;
+    padding-top: 140px;
+}
+
+section.about .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+/* !About */
+
 
 /* Studies */
 section.studies{
@@ -184,7 +209,7 @@ section.projects{
 }
 
 /* !Projects */
-
+/*!MAIN*/
 
 /* Footer Section */
 /* !Footer */
