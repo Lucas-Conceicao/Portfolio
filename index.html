@@ -1,204 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Portifólio Lucas Conceição</title>
-        <!--Link da fonte Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!--Final do link Google fonts-->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Lucas Conceição</title>
 
-    <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <header>
-            <div class="interface">
-                <div class="flex">
-                    <nav class ="menu-desktop">
-                        <ul>
-                            <li><a href="#inicio">Início</a></li>
-                            <li><a href="#habilidades">Habilidades</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ul>
-                    </nav> <!--menu-desktop-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
                 </div>
-            </div> <!--Interface-->
-        </header>
+            </div>
+        </nav>
+    </header>
 
-
-        <main>
-            <section id = "inicio" class="topo-do-site">
-                <div  class="interface">
-                    <div class="flex">
-                        <div class="txt-topo-site">
-                            <h1>LUCAS CONCEIÇÃO RICARDO<br></h1>
-                            <p>Analista e Desenvolvedor de Sistemas</p>
-                                    <div class ="info-topo-site">
-                                        <ul>
-                                            <li><a class="btn-01" href="assets/CurrículoLCR.pdf" download="assets/CurrículoLCR.pdf" type="application/pdf" target="_blank" rel="externous">Baixar Currículo</a></li>
-                                            <li><a class="btn-01" href="https://github.com/Lucas-Conceicao" target="_blank" rel="externous">Github</a></li>
-                                            <li><a class="btn-01" href="https://www.linkedin.com/in/lucas-conceicao-ricardo" target="_blank" rel="externous">Linkedin</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="ver-projetos">
-                                        <a class="btn-01" href="#projetos">Ver projetos</a>
-                                    </div>
-                        </div><!--txt-topo-site-->
+    <main>
+        <section id="inicio" class="topo-do-site">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6 col-md-12 text-center text-lg-start">
+                        <h1>LUCAS CONCEIÇÃO RICARDO</h1>
+                        <p>Analista e Desenvolvedor de Sistemas</p>
+                        <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3 my-4">
+                            <a class="btn-01" href="assets/CurrículoLCR.pdf" target="_blank" rel="noopener noreferrer">Baixar Currículo</a>
+                            <a class="social-icon" href="https://github.com/Lucas-Conceicao" target="_blank" rel="noopener noreferrer" title="Github">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+                            </a>
+                            <a class="social-icon" href="https://www.linkedin.com/in/lucas-conceicao-ricardo" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+                            </a>
+                        </div>
+                        <a class="btn-01 btn-projetos" href="#projetos">Ver projetos</a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
                         <div class="img-topo-site">
-                            <img src="assets/images/backup/Computador.png" alt="">
-                        </div><!--img-topo-site-->
-                    </div> <!--flex-->
-                </div> <!--Interface-->
-            </section> <!--topo-do-site-->
-
-            <section id="habilidades" class="tools">
-                <div class="interface">
-                    <h2 class="titulo">MINHAS <span>HABILIDADES.</span></h2>
-                    <h3>Hard-Skills</h3>
-                    <div class="flex">
-                        <div class="card-skills">
-                            <img src="assets/images/backup/gear.svg" alt="Ícone de programação" width="80" height="80">
-                            <h4>BACK-END</h4>
-                            <p>Java, C</p>
+                            <img src="assets/images/backup/Computador.png" class="img-fluid" alt="Ilustração de um computador com código na tela">
                         </div>
-
-                        <div class="card-skills">
-                            <img src="assets/images/backup/database.svg" alt="Ícone de banco de dados" width="80" height="80">
-                            <h4>BANCO DE DADOS</h4>
-                            <p>MySQL</p>
-                        </div>
-
-                        <div class="card-skills">
-                            <img src="assets/images/backup/window-fullscreen.svg" alt="Ícone de nuvem e devops" width="80" height="80">
-                            <h4>FRONT-END</h4>
-                            <p>HTML5, CSS3</p>
-                        </div>
-
-                        <div class="card-skills">
-                            <img src="assets/images/backup/pencil-square.svg" alt="Ícone de front-end" width="80" height="80">
-                            <h4>PROTITIPAGEM</h4>
-                            <p>Canva, Figma</p>
-                        </div>
-
-                        <div class="card-skills">
-                            <img src="assets/images/backup/bar-chart.svg" alt="Ícone de back-end" width="80" height="80">
-                            <h4>ANÁLISE E AUTOMAÇÃO</h4>
-                            <p>PowerBI, Planilhas, Excel</p>
-                        </div>
-
-                        <div class="card-skills">
-                            <img src="assets/images/backup/clock-history.svg" alt="Ícone de segurança" width="80" height="80">
-                            <h4>VERSIONAMENTO</h4>
-                            <p>Git, Github</p>
-                        </div>
-                    </div><!--flex-->
-                
-                    <h3>Soft-skills</h3>
-                    <div class="flex">
-                        <div class="card-skills">
-                            <img src="assets/images/backup/gear.svg" alt="Ícone de programação" width="80" height="80">
-                            <h4>COMUNICATIVO</h4>
-                        </div>
-                        <div class="card-skills">
-                            <img src="assets/images/backup/gear.svg" alt="Ícone de programação" width="80" height="80">
-                            <h4>PROATIVO</h4>
-                        </div>
-                        <div class="card-skills">
-                            <img src="assets/images/backup/gear.svg" alt="Ícone de programação" width="80" height="80">
-                            <h4>TRABALHO EM EQUIPE</h4>
-                        </div>
-
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section>
-
-            <section id = "sobre" class="about">
-                <div class="interface">
-                        <div class="flex">
-                            <div class="img-about">
-                                <img src="assets/images/backup/PessoaGenerica.png" alt="">
-                            </div> <!--img-about-->
-                            <div class="txt-about">
-                                <h2 class="titulo">SOBRE <span>MIM.</span></h2>
-                                <p>Olá! Meu nome é Lucas Conceição Ricardo, tenho 19 anos e sou um entusiasta da tecnologia e do desenvolvimento de software. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na FATEC - Baixada Santista, onde estou adquirindo conhecimentos sólidos em programação, banco de dados e engenharia de software. Sou apaixonado por criar soluções inovadoras que possam impactar positivamente a vida das pessoas. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente na área de tecnologia.</p>
-                            </div> <!--txt-about-->
-                        </div><!--flex-->
-                </div><!--Interface-->
-            </section><!--about-->
-
-            <section id="formacao" class="studies">
-                <div class="interface">
-                    <h2 class="titulo">MINHA <span>FORMAÇÃO.</span></h2>
-                    <div class="flex">
-                        <div class="card-study">
-                            <h3>Análise e Desenvolvimento de Sistemas</h3>
-                            <p>Instituição: FATEC - Baixada Santista<br>Conclusão: Dezembro de 2026<br>Descrição: Curso voltado para o desenvolvimento de sistemas, com foco em programação, banco de dados e engenharia de software.</p>                             
-                <a class="btn-01" href="https://www.fatec.sp.gov.br/" target="_blank" rel="externous">Ver Instituição</a>
-            </div> </div> </div></section>
-
-            <section id = "projetos" class="projects">
-                <div class="interface">
-                    <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
-                    <div class="flex">
-                        <div class="card-project">
-                            <img src="Imagens/Reduzidas/githubLogo.png" alt="">
-                            <h3>Projeto Lótus</h3>
-                            <p>Documentação de um E-commerce para curadoria de Brechós Online</p>
-                            <a class = "btn-01" href="assets/ProjetoLotus.pdf" target="_blank" rel="externous">Ver Projeto</a>
-                        </div> <!--card-project-->
-                        <div class="card-project">
-                            <img src="Imagens/Reduzidas/githubLogo.png" alt="">
-                            <h3>Catálogo de Filmes</h3>
-                            <p>Sistema para gerenciamento de filmes com funcionalidades de CRUD</p>
-                            <a class = "btn-01" href="https://github.com/Lucas-Conceicao/movie-catalog-in-c" target="_blank" rel="externous">Ver Projeto</a>
-                        </div> <!--card-project-->
-                        <div class="card-project">
-                            <img src="Imagens/Reduzidas/githubLogo.png" alt="">
-                            <h3>Projeto 03</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                            <a class = "btn-01" href="#" target="_blank" rel="externous">Ver Projeto</a>
-                        </div> <!--card-project-->
-                    </div> <!--flex-->
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id = "contato" class="contact">
-                <div class="interface">
-                    <h2 class="titulo">FALE <span>COMIGO.</span></h2>
-                    <div class="flex">
-                        <div class="email-card">
-                            <div class="inputs-email">
-                                <h3>Nome:</h3>
-                            </div> <!--inputs-email-->
-                            <div class="inputs-email">
-                                <h3>Email:</h3>
-                            </div> <!--inputs-email-->
-                            <div class="inputs-email">
-                                <h3>Mensagem:</h3>
-                            </div> <!--inputs-email-->
-                            <a class = "btn-01" href="#" target="_blank" rel="externous">Enviar</a>
-                        </div><!--email-card-->
-                    </div> <!--flex-->
-                </div> <!--interface-->
-            </section><!--contato-->
+        <section id="habilidades" class="tools">
+            <div class="container">
+                <h2 class="titulo text-center">MINHAS <span>HABILIDADES.</span></h2>
+                <h3 class="text-center">Hard-Skills</h3>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/gear.svg" alt="Ícone de programação" width="80" height="80"><h4>BACK-END</h4><p>Java, C</p></div></div>
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/database.svg" alt="Ícone de banco de dados" width="80" height="80"><h4>BANCO DE DADOS</h4><p>MySQL</p></div></div>
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/window-fullscreen.svg" alt="Ícone de front-end" width="80" height="80"><h4>FRONT-END</h4><p>HTML5, CSS3</p></div></div>
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/pencil-square.svg" alt="Ícone de prototipagem" width="80" height="80"><h4>PROTOTIPAGEM</h4><p>Canva, Figma</p></div></div>
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/bar-chart.svg" alt="Ícone de análise" width="80" height="80"><h4>ANÁLISE E AUTOMAÇÃO</h4><p>PowerBI, Planilhas, Excel</p></div></div>
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/clock-history.svg" alt="Ícone de versionamento" width="80" height="80"><h4>VERSIONAMENTO</h4><p>Git, Github</p></div></div>
+                </div>
+                <h3 class="text-center mt-5">Soft-Skills</h3>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/megaphone.svg" alt="Ícone de comunicação" width="80" height="80"><h4>COMUNICATIVO</h4></div></div>
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/lightbulb.svg" alt="Ícone de proatividade" width="80" height="80"><h4>PROATIVO</h4></div></div>
+                    <div class="col-lg-4 col-md-6"><div class="card-skills"><img src="assets/images/backup/people.svg" alt="Ícone de trabalho em equipe" width="80" height="80"><h4>TRABALHO EM EQUIPE</h4></div></div>
+                </div>
+            </div>
+        </section>
 
-        </main>
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-5 col-md-12 text-center">
+                        <img src="assets/images/backup/PessoaGenerica.png" class="img-fluid about-img" alt="Foto de Lucas Conceição Ricardo">
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <h2 class="titulo">SOBRE <span>MIM.</span></h2>
+                        <p>Olá! Meu nome é Lucas Conceição Ricardo, tenho 19 anos e sou um entusiasta da tecnologia e do desenvolvimento de software. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na FATEC - Baixada Santista, onde estou adquirindo conhecimentos sólidos em programação, banco de dados e engenharia de software. Sou apaixonado por criar soluções inovadoras que possam impactar positivamente a vida das pessoas. Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente na área de tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="projetos" class="projects">
+            <div class="container">
+                <h2 class="titulo text-center">MINHA <span>FORMAÇÃO & PROJETOS.</span></h2>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6"><div class="card-project"><h3 class="card-title">Análise e Desenvolvimento de Sistemas</h3><p>Instituição: FATEC - Baixada Santista<br>Conclusão: Dezembro de 2026</p><a class="btn-01" href="https://www.fatec.sp.gov.br/" target="_blank" rel="noopener noreferrer">Ver Instituição</a></div></div>
 
-        <footer>
-            <div class="detais">
-                <div class="interface">
-                    <hr>
-                    <p>Copyright © 2025 Lucas Conceição Ricardo Todos os direitos reservados.</p>
-                </div> <!--interface-->
-            </div> <!--detais-->
-        </footer>
+                    <div class="col-lg-4 col-md-6"><div class="card-project"><img src="assets/images/backup/FlorDeLotos.webp" class="img-fluid" alt="Logo Flor de Lótus"><h3>Projeto Lótus</h3><p>E-commerce para curadoria de Brechós Online</p><a class="btn-01" href="assets/ProjetoLotus.pdf" target="_blank" rel="noopener noreferrer">Ver Projeto</a></div></div>
 
+                    <div class="col-lg-4 col-md-6"><div class="card-project"><img src="Imagens/Reduzidas/githubLogo.png" class="img-fluid" alt="Logo Github"><h3>Catálogo de Filmes</h3><p>Sistema de gerenciamento de filmes com CRUD em C.</p><a class="btn-01" href="https://github.com/Lucas-Conceicao/movie-catalog-in-c" target="_blank" rel="noopener noreferrer">Ver Projeto</a></div></div>
+                </div>
+            </div>
+        </section>
 
-    </body>
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2 class="titulo text-center">FALE <span>COMIGO.</span></h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <form action="#" method="POST">
+                            <div class="mb-3"><input type="text" class="form-control" name="name" placeholder="Seu nome completo" required></div>
+                            <div class="mb-3"><input type="email" class="form-control" name="email" placeholder="Seu e-mail" required></div>
+                            <div class="mb-3"><textarea class="form-control" name="message" rows="5" placeholder="Sua mensagem" required></textarea></div>
+                            <div class="text-center"><input type="submit" class="btn-01" value="ENVIAR"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <hr>
+            <p>Copyright © 2025 Lucas Conceição Ricardo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
